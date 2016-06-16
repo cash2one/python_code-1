@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <xmlVersion>1.0.1</xmlVersion>
+    <serverUrl>https://cloud.yuyutechnology.com/configserver/getConfig.do?app=rollit&amp;version=common-android&amp;fileName=serverUrl.xml?ver=2016022501</serverUrl>
+    <coverAd>https://cloud.yuyutechnology.com/configserver/getConfig.do?app=rollit&amp;version=common-android&amp;fileName=coverAd.xml?ver=2016022501</coverAd>
+</Config>
+
+
+
+

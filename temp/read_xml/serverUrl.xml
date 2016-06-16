@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+    <isOpen>true</isOpen>
+    <testServerUrl>http://www888.rollit.me/parleyserver</testServerUrl>
+    <productServerUrl>http://www.rollit.me/parleyserver</productServerUrl>
+    <videoLength>30</videoLength>
+    <defaultTitle>愿望成真</defaultTitle>
+    <eventTitleCh>愿望成真</eventTitleCh>
+    <eventTitleEn>Wish come true</eventTitleEn>
+    <eventImageUrl>http://yuyu-cloud.s3.amazonaws.com/prod_config/rollit/common-android/resource/lotusclublogo_android.png</eventImageUrl>
+</Config>
+
+
