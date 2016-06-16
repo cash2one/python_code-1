@@ -2,7 +2,7 @@
 # _*_ encoding:utf-8_*_
 __author__ = 'Miles Peng'
 
-import os
+
 import sys
 import logging
 import commands
