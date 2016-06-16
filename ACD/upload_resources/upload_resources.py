@@ -31,8 +31,13 @@ def get_upload_files(dir):
 
     return list_files
 
-def upload_s3():
-    pass
+def upload_s3(list_files,target_path_prefix):
+    s3=boto3.resource("s3")
+    for dir_,files_ in list_files:
+        s3.meta.client.upload_file("/".join(dir_,files_),target_path_prefix,)
+
+
+
 
 def upload_qiniu():
     pass
@@ -57,6 +62,19 @@ def logMsg( fun_name, err_msg,level ):
     logger.removeHandler( hdlr )
     #logMsg("modify",cmd_sed,1)
 
+def _run(cmd):
+    import subprocess
+    cmdref = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+    output,error_info = cmdref.communicate()
+    if error_info:
+        msg= "RUN %s ERROR,error info: %s "%(cmd,error_info)
+        logMsg("cmd",msg,2)
+        return False
+    else:
+        print "Run Success!!"
+        return True
+
+
 
 def main(config_file,project_name,version):
     cf=ConfigParser.SafeConfigParser()
@@ -66,14 +84,16 @@ def main(config_file,project_name,version):
     upload_method=cf.get(project_name,"method")
 
     if upload_method.lower()=="s3":
-        bucket_name=cf.get(project_name,"bucket_name")
         target_path=cf.get(project_name,"target_path")
-        target_path_prefix=("%s/%s/%s")%(bucket_name,target_path,version)
-        s3_access_key_id=cf.get("common","s3_access_key_id")
-        s3_secret_access_key=cf.get("common","s3_secret_access_key")
-        if upload_s3(list_files,target_path_prefix,s3_access_key_id,s3_secret_access_key):
-            msg="upload %s  success"%project_name
+        profile=cf.get(project_name,"profile")
+        target_path_prefix=("%s/%s")%(target_path,version)
+
+        cmd="aws s3 sync {source_path} {target_path}  --acl public-read --cache-control='no-cache' " \
+            "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
+        if _run(cmd):
+            msg="upload {project} success!".format(project=project_name)
             logMsg("upload_s3",msg,1)
+
 
     elif upload_method.lower()=="qiniu":
         bucket_name=cf.get(project_name,"bucket_name")
