@@ -28,9 +28,9 @@ def upload_s3(source_path,target_path_prefix,profile):
 def upload_qiniu(qiniu_dict,version):
     #mv source to tmp/version
     source=qiniu_dict.get("src")
-    cmd="rm -r /tmp/{version} && cp -r {source} /tmp/{version}".format(version=version,source=source)
+    cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
     if _run(cmd):
-        qiniu_dict["src"]="/tmp/{version}".format(version=version)
+        qiniu_dict["src"]="/tmp/qiniu}"
         data=json.dumps(qiniu_dict)
         with open("/tmp/qiniu.json","w") as f:
             f.write(data)
