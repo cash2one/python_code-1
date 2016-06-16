@@ -1,0 +1,8 @@
+{
+    "access_key": "cnfeat1234",
+    "secret_key": "cnfeat5678",
+    "bucket": "cnfeat",
+    "sync_dir": "/Users/cnfeat/Documents/qrsync/blog",
+    "async_ops": "",
+    "debug_level": 1
+}
