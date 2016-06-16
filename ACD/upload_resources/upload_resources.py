@@ -2,11 +2,9 @@
 # _*_ encoding:utf-8_*_
 __author__ = "Miles.Peng"
 import sys
-import qiniu
 import ConfigParser
 import logging
-import os
-import boto3
+import json
 
 '''
 This script for upload to S3(boto) or qiniu,
@@ -14,36 +12,38 @@ start like "upload_resources.py config_files project_name version(which was numb
 First check config file ,get upload method (s3 or qiniu ),source_path,dest_path
 second check source_path get files which neen to upload to a list
 as method run upload_s3 or qiniu to upload
+request awscli&qrsync
 '''
 log_file="default.log"
 
-def get_upload_files(dir):
-    list_files=[]
-    if not os.path.isdir(dir):
-        msg="%s is not a directory ,PLS check it "%dir
-        logMsg("get upload files",msg,2)
-        sys.exit(1)
 
-    for root,dirs,files in os.walk(dir):
-        if files:
-            get_files=(root,files)
-            list_files.append(get_files)
+def upload_s3(source_path,target_path_prefix,profile):
+    cmd="aws s3 sync {source_path} {target_path}  --acl public-read --cache-control='no-cache' " \
+        "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
+    if _run(cmd):
+        msg="upload {project} success!".format(project=project_name)
+        logMsg("upload_s3",msg,1)
+    return True
 
-    return list_files
+def upload_qiniu(qiniu_dict,version):
+    #mv source to tmp/version
+    source=qiniu_dict.get("src")
+    cmd="rm -r /tmp/{version} && cp -r {source} /tmp/{version}".format(version=version,source=source)
+    if _run(cmd):
+        qiniu_dict["src"]="/tmp/{version}".format(version=version)
+        data=json.dumps(qiniu_dict)
+        with open("/tmp/qiniu.json","w") as f:
+            f.write(data)
+            f.close()
+    cmd_sync="qrsync /tmp/qiniu.json"
+    if _run(cmd_sync):
+        msg="Sync to qiniu success "
+        logMsg("upload_qiniu",msg,1)
+        return True
+    return False
 
-def upload_s3(list_files,target_path_prefix):
-    s3=boto3.resource("s3")
-    for dir_,files_ in list_files:
-        s3.meta.client.upload_file("/".join(dir_,files_),target_path_prefix,)
-
-
-
-
-def upload_qiniu():
-    pass
 
 def initlog():
-    import logging
     logger = None
     logger = logging.getLogger()
     hdlr = logging.FileHandler(log_file)
@@ -80,28 +80,27 @@ def main(config_file,project_name,version):
     cf=ConfigParser.SafeConfigParser()
     cf.read(config_file)
     source_path=cf.get(project_name,"upload_path")
-    list_files=get_upload_files(source_path)
     upload_method=cf.get(project_name,"method")
 
     if upload_method.lower()=="s3":
         target_path=cf.get(project_name,"target_path")
         profile=cf.get(project_name,"profile")
         target_path_prefix=("%s/%s")%(target_path,version)
-
-        cmd="aws s3 sync {source_path} {target_path}  --acl public-read --cache-control='no-cache' " \
-            "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
-        if _run(cmd):
-            msg="upload {project} success!".format(project=project_name)
-            logMsg("upload_s3",msg,1)
+        upload_s3(source_path,target_path_prefix,profile)
 
 
     elif upload_method.lower()=="qiniu":
         bucket_name=cf.get(project_name,"bucket_name")
-        target_path=cf.get(project_name,"target_path")
-        target_path_prefix=("%s/%s/%s")%(bucket_name,target_path,version)
-        qiniu_access_key_id=cf.get("common","qiniu_access_key_id")
-        qiniu_secret_access_key=cf.get("common","qiniu_secret_access_key")
-        if upload_qiniu(list_files,target_path_prefix,qiniu_access_key_id,qiniu_secret_access_key):
+        qiniu_access_key_id=cf.get(project_name,"qiniu_access_key_id")
+        qiniu_secret_access_key=cf.get(project_name,"qiniu_secret_access_key")
+        qiniu_dict=dict()
+        qiniu_dict["src"]=source_path
+        dest_="qiniu:access_key={access_key}&secret_key={secret_key}&bucket={bucket}".format\
+            (access_key=qiniu_access_key_id,secret_key=qiniu_secret_access_key,bucket=bucket_name)
+        qiniu_dict["dest"]=dest_
+        qiniu_dict["debug_level"]=1
+
+        if upload_qiniu(qiniu_dict,version):
             msg="upload %s  success"%project_name
             logMsg("upload_qiniu",msg,1)
     else:
