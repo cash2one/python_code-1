@@ -12,6 +12,8 @@ def filter_file(dir,param):
             for file in files:
                 if file.split(".")[-1] in param:
                     check_files.append(os.path.join(root,file))
+    else:
+        print "%s is not a path ,pls check it "%dir
     return check_files
 
 def remove_nouse(check_files,nouse):
