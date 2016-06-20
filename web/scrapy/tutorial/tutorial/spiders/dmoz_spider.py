@@ -3,6 +3,7 @@
 __author__ = "Miles.Peng"
 import scrapy
 
+
 class DmozSpider(scrapy.spiders.Spider):
     name="dmoz"
     allowed_domains=["dmoz.org"]
@@ -17,6 +18,7 @@ class DmozSpider(scrapy.spiders.Spider):
 
     def parse(self, response):
         for sel in response.xpath("//ul/li"):
+            #item=TutorialItem()
             title=sel.xpath("a/text()").extract()
             link=sel.xpath("a/@href").extract()
             desc=sel.xpath("text()").extract()
