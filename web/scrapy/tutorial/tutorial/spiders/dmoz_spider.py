@@ -1,0 +1,16 @@
+#!/usr/bin/python
+# _*_ encoding:utf-8_*_
+__author__ = "Miles.Peng"
+import scrapy
+
+class DmozSpider(scrapy.spiders.Spider):
+    name="dmoz"
+    allowed_domains=["dmoz.org"]
+    start_urls=[
+        "http://www.dmoz.org/Computer/Programing/Languages/Python/Books/",
+        "http://www.dmoz.org/Computer/Programing/Languages/Python/Resources/"
+    ]
+    def parse(self, response):
+        filename=response.url.split("/")[-2]
+        with open(filename,"wb") as f:
+            f.write(response.body)
