@@ -62,13 +62,60 @@ def run21():
     for i in range(len(team1)):
         pass
 
+def run27():
+    input=raw_input("Pls input a string: \n")
+    output=input[::-1]
+    print "Output is \t",output
 
+def run28():
+    def age(n):
+        #import pdb; pdb.set_trace()
+        if n==1: c=10
+        else: c=age(n-1)+2
+        return c
+    x=age(5)
+    print x
 
+def run32():
+
+    def print_line(param01,parm02):
+        print (param01),
+        for i in range(0,4): print (parm02),
+
+    def run_N(func,N):
+        for i in range(0,N):
+            func()
+    def print01():
+        print_line("+","-")
+    def print02():
+        print_line("|"," ")
+
+    def print03():
+        run_N(print01,2)
+        print"+"
+        for i in range(0,4):
+            run_N(print02,2)
+            print("|")
+    run_N(print03,2)
+    run_N(print01,2);print"+"
+
+def run401():
+    import turtle
+    bob=turtle.Turtle()
+    print bob
+    def polygon(t,n,length):
+        angle=360/n
+        for i in range(n):
+            t.fd(length)
+            t.lt(angle)
+
+    polygon(bob,30,20)
+    turtle.mainloop()
 
 
 
 def main():
-    run21()
+    run401()
 
 if __name__=="__main__":
     main()

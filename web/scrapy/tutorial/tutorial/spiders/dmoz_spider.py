@@ -2,7 +2,8 @@
 # _*_ encoding:utf-8_*_
 __author__ = "Miles.Peng"
 import scrapy
-
+import sys
+sys.path.append(r"D:\Temp\VM\python_code\web\scrapy\tutorial")
 
 class DmozSpider(scrapy.spiders.Spider):
     name="dmoz"
