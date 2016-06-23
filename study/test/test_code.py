@@ -113,6 +113,22 @@ def run401():
     turtle.mainloop()
 
 
+def run1301():
+    file_="/home/qa/miles/word"
+    with open(file_,"r") as f:
+        data_=f.read()
+    import string
+    check_char=string.whitespace+string.punctuation
+    check_out=""
+    for line_ in data_:
+        for char_ in check_char:
+            for one_char in line_:
+                if one_char==char_:
+                    line_.replace(char_,"")
+        check_out+=line_
+
+
+
 
 def main():
     run401()

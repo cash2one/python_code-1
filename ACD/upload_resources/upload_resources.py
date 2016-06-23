@@ -30,7 +30,7 @@ def upload_qiniu(qiniu_dict,version):
     source=qiniu_dict.get("src")
     cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
     if _run(cmd):
-        qiniu_dict["src"]="/tmp/qiniu}"
+        qiniu_dict["src"]="/tmp/qiniu/{version}".format(version=version)
         data=json.dumps(qiniu_dict)
         with open("/tmp/qiniu.json","w") as f:
             f.write(data)
