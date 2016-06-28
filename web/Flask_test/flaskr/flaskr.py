@@ -2,6 +2,8 @@ import  sqlite3
 from flask import Flask,request,sessions,g,redirect,url_for,\
     abort,render_template,flash
 
+
+
 from contextlib import closing
 
 DATABASE="D:\flaskr.db"

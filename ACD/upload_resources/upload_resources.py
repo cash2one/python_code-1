@@ -5,6 +5,7 @@ import sys
 import ConfigParser
 import logging
 import json
+import pdb
 
 '''
 This script for upload to S3(boto) or qiniu,
@@ -25,22 +26,46 @@ def upload_s3(source_path,target_path_prefix,profile):
         logMsg("upload_s3",msg,1)
     return True
 
-def upload_qiniu(qiniu_dict,version):
-    #mv source to tmp/version
-    source=qiniu_dict.get("src")
-    cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
-    if _run(cmd):
-        qiniu_dict["src"]="/tmp/qiniu}"
-        data=json.dumps(qiniu_dict)
-        with open("/tmp/qiniu.json","w") as f:
-            f.write(data)
-            f.close()
-    cmd_sync="qrsync /tmp/qiniu.json"
-    if _run(cmd_sync):
-        msg="Sync to qiniu success "
-        logMsg("upload_qiniu",msg,1)
-        return True
-    return False
+# def upload_qiniu(qiniu_dict,version):
+#     #mv source to tmp/version
+#     source=qiniu_dict.get("src")
+#     pdb.set_trace()
+#  #   cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
+#     cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
+#     if _run(cmd):
+#         qiniu_dict["src"]="/tmp/qiniu/{version}".format(version=version)
+#         data=json.dumps(qiniu_dict)
+#         with open("/tmp/qiniu.json","w") as f:
+#             f.write(data)
+#             f.close()
+#     cmd_sync="/home/qa/miles/qiniu/qrsync/qrsync /tmp/qiniu.json"
+#     if _run(cmd_sync):
+#         msg="Sync to qiniu success "
+#         logMsg("upload_qiniu",msg,1)
+#         return True
+#     return False
+
+def upload_qiniu_qshell(qiniu_dict,version):
+     source=qiniu_dict.get("src_dir",None)
+     cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
+     if _run(cmd):
+         json_template="""{
+         "src_dir"   :  {src_dir},
+         "access_key":   {access_key},
+         "secret_key":   {secret_key},
+         "bucket"    :   {bucket},
+         "up_host"   :   "http://upload.qiniu.com",
+         "ignore_dir":   false,
+         "key_prefix":   {key_prefix},
+         "overwrite" :   false,
+         "check_exists" :    false
+         }""".format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
+         with open("/tmp/qiniu.conf",'w') as f:
+             f.write(json_template)
+
+         sync_cmd="/home/qa/miles/qiniu/qshell qupload /tmp/qiniu.conf"
+         if _run(sync_cmd):
+             print "Sync complete"
 
 
 def initlog():
@@ -79,8 +104,8 @@ def _run(cmd):
 def main(config_file,project_name,version):
     cf=ConfigParser.SafeConfigParser()
     cf.read(config_file)
-    source_path=cf.get(project_name,"upload_path")
-    upload_method=cf.get(project_name,"method")
+    source_path=cf.get(project_name,"source_path")
+    upload_method=cf.get(project_name,"upload_method")
 
     if upload_method.lower()=="s3":
         target_path=cf.get(project_name,"target_path")
@@ -90,17 +115,13 @@ def main(config_file,project_name,version):
 
 
     elif upload_method.lower()=="qiniu":
-        bucket_name=cf.get(project_name,"bucket_name")
-        qiniu_access_key_id=cf.get(project_name,"qiniu_access_key_id")
-        qiniu_secret_access_key=cf.get(project_name,"qiniu_secret_access_key")
         qiniu_dict=dict()
-        qiniu_dict["src"]=source_path
-        dest_="qiniu:access_key={access_key}&secret_key={secret_key}&bucket={bucket}".format\
-            (access_key=qiniu_access_key_id,secret_key=qiniu_secret_access_key,bucket=bucket_name)
-        qiniu_dict["dest"]=dest_
-        qiniu_dict["debug_level"]=1
+        qiniu_dict["src_dir"]=source_path
+        qiniu_dict["qiniu_access_key"]=cf.get(project_name,"qiniu_access_key")
+        qiniu_dict["qiniu_secret_key"]=cf.get(project_name,"qiniu_secret_key")
+        qiniu_dict["bucket_name"]=cf.get(project_name,"bucket_name")
 
-        if upload_qiniu(qiniu_dict,version):
+        if upload_qiniu_qshell(qiniu_dict,version):
             msg="upload %s  success"%project_name
             logMsg("upload_qiniu",msg,1)
     else:
