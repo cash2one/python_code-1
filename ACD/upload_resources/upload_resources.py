@@ -38,6 +38,7 @@ def upload_qiniu_qshell(qiniu_dict,version):
                 "bucket"    :   qiniu_dict["bucket_name"],
                 "up_host"   :   "http://upload.qiniu.com",
                 "ignore_dir":   False,
+                "rescan_local": True,
                 "key_prefix":  qiniu_dict.get("key_prefix",""),
                 "overwrite" :   False,
                 "check_exists" : False
@@ -45,7 +46,7 @@ def upload_qiniu_qshell(qiniu_dict,version):
          with open("/tmp/qiniu.conf",'w') as f:
              f.write(json.dumps(json_template,indent=4))
 
-         sync_cmd="/home/qa/miles/qiniu/qshell qupload /tmp/qiniu.conf"
+         sync_cmd="/home/qa/miles/qiniu/qshell qupload 10 /tmp/qiniu.conf"
          if _run(sync_cmd):
              print "Sync complete"
 
