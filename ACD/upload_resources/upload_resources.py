@@ -43,10 +43,10 @@ def upload_s3(source_path,target_path_prefix,profile):
 def upload_qiniu_qshell(qiniu_dict,version):
      source=qiniu_dict.get("src_dir",None)
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
-     source='/tmp/qiniu/'+str(version)
+     upload_path='/tmp/qiniu/'
      if _run(cmd):
          json_template={
-             "src_dir"   : source,
+             "src_dir"   : upload_path,
                  "access_key":   qiniu_dict["qiniu_access_key"],
                 "secret_key":   qiniu_dict["qiniu_secret_key"],
                 "bucket"    :   qiniu_dict["bucket_name"],
