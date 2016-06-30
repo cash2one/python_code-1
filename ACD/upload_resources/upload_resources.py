@@ -48,6 +48,8 @@ def upload_qiniu_qshell(qiniu_dict,version):
 
          sync_cmd="/home/qa/miles/qiniu/qshell qupload 10 /tmp/qiniu.conf"
          if _run(sync_cmd):
+             msg="Sync {source} to {dest} success".format(source=upload_path,dest=qiniu_dict["bucket_name"])
+             logMsg("Qiniu",msg,1)
              print "Sync complete"
 
 
@@ -76,6 +78,7 @@ def _run(cmd):
     output,error_info = cmdref.communicate()
     if error_info:
         msg= "RUN %s ERROR,error info: %s "%(cmd,error_info)
+        print msg
         logMsg("cmd",msg,2)
         return False
     else:
