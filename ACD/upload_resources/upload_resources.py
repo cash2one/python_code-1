@@ -48,9 +48,9 @@ def upload_s3(source_path,target_path_prefix,profile):
 def upload_qiniu_qshell(qiniu_dict,version):
      source=qiniu_dict.get("src_dir",None)
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
-     import pdb;pdb.set_trace()
+     pdb.set_trace()
      if _run(cmd):
-         json_template="""{
+         json_template='''{
          "src_dir"   :  {src_dir},
          "access_key":   {access_key},
          "secret_key":   {secret_key},
@@ -59,8 +59,7 @@ def upload_qiniu_qshell(qiniu_dict,version):
          "ignore_dir":   false,
          "key_prefix":   {key_prefix},
          "overwrite" :   false,
-         "check_exists" :    false
-         }""".format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
+         "check_exists" : false }'''.format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
          with open("/tmp/qiniu.conf",'w') as f:
              f.write(json_template)
 
