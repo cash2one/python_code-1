@@ -26,40 +26,25 @@ def upload_s3(source_path,target_path_prefix,profile):
         logMsg("upload_s3",msg,1)
     return True
 
-# def upload_qiniu(qiniu_dict,version):
-#     #mv source to tmp/version
-#     source=qiniu_dict.get("src")
-#     pdb.set_trace()
-#  #   cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
-#     cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
-#     if _run(cmd):
-#         qiniu_dict["src"]="/tmp/qiniu/{version}".format(version=version)
-#         data=json.dumps(qiniu_dict)
-#         with open("/tmp/qiniu.json","w") as f:
-#             f.write(data)
-#             f.close()
-#     cmd_sync="/home/qa/miles/qiniu/qrsync/qrsync /tmp/qiniu.json"
-#     if _run(cmd_sync):
-#         msg="Sync to qiniu success "
-#         logMsg("upload_qiniu",msg,1)
-#         return True
-#     return False
+
+#shell
+#!/bin/sh
+# myPath="/tmp/qiniu"
+# source=$1
+# version=$2#
+# if [ -d "$myPath" ];then
+# chdir $myPath && rm -rf *
+# else
+# mkdir -p $myPath && chdir $myPath
+# fi
+# # cp -r $source $myPath/$version
+
 
 def upload_qiniu_qshell(qiniu_dict,version):
      source=qiniu_dict.get("src_dir",None)
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
-     pdb.set_trace()
+     source='/tmp/qiniu/'+str(version)
      if _run(cmd):
-         # json_template='''{ "src_dir"   :  {src_dir},\
-         # "access_key":   {access_key},\
-         # "secret_key":   {secret_key},\
-         # "bucket"    :   {bucket},\
-         # "up_host"   :   "http://upload.qiniu.com",\
-         # "ignore_dir":   false,\
-         # "key_prefix":   {key_prefix},\
-         # "overwrite" :   false,\
-         # "check_exists" : false }'''.format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
-
          json_template={
              "src_dir"   : source,
                  "access_key":   qiniu_dict["qiniu_access_key"],
