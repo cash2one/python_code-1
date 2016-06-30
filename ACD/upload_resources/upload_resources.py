@@ -24,6 +24,7 @@ def upload_s3(source_path,target_path_prefix,profile):
     if _run(cmd):
         msg="upload {project} success!".format(project=project_name)
         logMsg("S3",msg,1)
+        print msg
     return True
 
 def upload_qiniu_qshell(qiniu_dict,version):
