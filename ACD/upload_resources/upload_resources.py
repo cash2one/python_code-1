@@ -26,20 +26,6 @@ def upload_s3(source_path,target_path_prefix,profile):
         logMsg("upload_s3",msg,1)
     return True
 
-
-#shell
-#!/bin/sh
-# myPath="/tmp/qiniu"
-# source=$1
-# version=$2#
-# if [ -d "$myPath" ];then
-# chdir $myPath && rm -rf *
-# else
-# mkdir -p $myPath && chdir $myPath
-# fi
-# # cp -r $source $myPath/$version
-
-
 def upload_qiniu_qshell(qiniu_dict,version):
      source=qiniu_dict.get("src_dir",None)
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
