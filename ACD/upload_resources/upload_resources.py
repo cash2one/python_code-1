@@ -78,7 +78,7 @@ def _run(cmd):
         logMsg("cmd",msg,2)
         return False
     else:
-        print "Run Success!!"
+        print "Run Success!! \t %s"%output
         return True
 
 
