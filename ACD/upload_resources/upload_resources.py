@@ -22,7 +22,7 @@ def upload_s3(source_path,target_path_prefix,profile):
     cmd="aws s3 sync {source_path} {target_path}  --acl public-read --cache-control='no-cache' " \
         "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
     if _run(cmd):
-        msg="upload {project} success!".format(project=project_name)
+        msg="upload {source_path} success!".format(source_path=source_path)
         logMsg("S3",msg,1)
         print msg
     return True
