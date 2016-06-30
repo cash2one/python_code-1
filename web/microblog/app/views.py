@@ -1,6 +1,7 @@
 from flask import render_template, flash, redirect
-from app import app
-from forms import LoginForm
+from app import app,db,lm,oid
+from .forms import LoginForm
+from .models import User
 
 @app.route('/')
 @app.route('/index')
@@ -22,6 +23,7 @@ def index():
         posts = posts)
 
 @app.route('/login', methods = ['GET', 'POST'])
+
 def login():
     form = LoginForm()
     if form.validate_on_submit():
