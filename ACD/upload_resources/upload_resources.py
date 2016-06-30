@@ -23,7 +23,7 @@ def upload_s3(source_path,target_path_prefix,profile):
         "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
     if _run(cmd):
         msg="upload {project} success!".format(project=project_name)
-        logMsg("upload_s3",msg,1)
+        logMsg("S3",msg,1)
     return True
 
 def upload_qiniu_qshell(qiniu_dict,version):
@@ -82,7 +82,7 @@ def _run(cmd):
         logMsg("cmd",msg,2)
         return False
     else:
-        print "Run Success!! \t %s"%output
+        print "Run %s Success!! \t "%cmd
         return True
 
 
