@@ -50,17 +50,29 @@ def upload_qiniu_qshell(qiniu_dict,version):
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
      pdb.set_trace()
      if _run(cmd):
-         json_template='''{ "src_dir"   :  {src_dir},\
-         "access_key":   {access_key},\
-         "secret_key":   {secret_key},\
-         "bucket"    :   {bucket},\
-         "up_host"   :   "http://upload.qiniu.com",\
-         "ignore_dir":   false,\
-         "key_prefix":   {key_prefix},\
-         "overwrite" :   false,\
-         "check_exists" : false }'''.format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
+         # json_template='''{ "src_dir"   :  {src_dir},\
+         # "access_key":   {access_key},\
+         # "secret_key":   {secret_key},\
+         # "bucket"    :   {bucket},\
+         # "up_host"   :   "http://upload.qiniu.com",\
+         # "ignore_dir":   false,\
+         # "key_prefix":   {key_prefix},\
+         # "overwrite" :   false,\
+         # "check_exists" : false }'''.format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
+
+         json_template={
+             "src_dir"   : source,
+                 "access_key":   qiniu_dict["qiniu_access_key"],
+                "secret_key":   qiniu_dict["qiniu_secret_key"],
+                "bucket"    :   qiniu_dict["bucket_name"],
+                "up_host"   :   "http://upload.qiniu.com",
+                "ignore_dir":   False,
+                "key_prefix":  qiniu_dict.get("key_prefix",""),
+                "overwrite" :   False,
+                "check_exists" : False
+         }
          with open("/tmp/qiniu.conf",'w') as f:
-             f.write(json_template)
+             f.write(json.dumps(json_template,indent=4))
 
          sync_cmd="/home/qa/miles/qiniu/qshell qupload /tmp/qiniu.conf"
          if _run(sync_cmd):
