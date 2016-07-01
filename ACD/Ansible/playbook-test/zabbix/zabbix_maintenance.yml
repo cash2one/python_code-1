@@ -1,0 +1,16 @@
+---
+- name: Test zabbix maintenance
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - zabbix_maintenance: name="Update of www"
+                      host_name=COC-ACD
+                      host_groups=1-YuYu-COC
+                      minutes=90
+                      state=present
+                      collect_data=false
+                      server_url=http://coc.yuyutechnology.com/zabbix
+                      login_user=miles.peng
+                      login_password=miles.peng
+

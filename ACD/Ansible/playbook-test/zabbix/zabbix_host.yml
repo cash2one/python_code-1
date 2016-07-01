@@ -1,0 +1,33 @@
+---
+- name: Test zabbix maintenance
+  hosts: 127.0.0.1
+  connection: local
+
+  tasks:
+    - name: Create a new host or update an existing host's info
+      local_action:
+        module: zabbix_host
+        server_url: http://coc.yuyutechnology.com/zabbix
+        login_user: miles.peng
+        login_password: miles.peng
+        host_name: miles-test
+        host_groups:
+        - 1-YuYu-COC
+        link_templates:
+        - 1-Template Base Services
+        status: enabled
+        state: present
+        interfaces:
+        - type: 1
+          main: 1
+          useip: 1
+          ip: 10.23.5.1
+          dns: ""
+          port: 10050
+        - type: 4
+          main: 1
+          useip: 1
+          ip: 10.23.5.1
+          dns: ""
+          port: 12345
+
