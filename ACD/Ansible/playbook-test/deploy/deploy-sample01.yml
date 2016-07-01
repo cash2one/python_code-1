@@ -1,5 +1,5 @@
 ---
-- name: Test zabbix maintenance
+- name: Test deploy packages in tomcat
   hosts: docker
   tasks:
     - name: create bak &build directory
@@ -9,13 +9,13 @@
         - {dir: '/root/bak'}
 
     - name: cp source package to remote
-      template: src=/tmp/{{ item.src }} dest={{ item.dest }}
+      copy: src=/tmp/{{ item.src }} dest={{ item.dest }}
       with_items:
         - { src: 'temp.tar.gz', dest: '/root/build/temp.tar.gz' }
         - { src: 'qiniu.conf', dest: '/data/qiniu.conf' }
 
     - name: back old package
-      script: /home/qa/miles/ansible/playbook/script/backold.sh creates=/tmp/created.txt
+      script: /home/qa/miles/ansible/playbook/script/backold.sh
 
     - name: tar zxvf file
       shell: cd /root/build && tar zxvf temp.tar.gz
