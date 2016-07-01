@@ -3,8 +3,6 @@
 #__author__ = 'miles.peng'
 
 
-import time
-import sys
 from common import  *
 
 #
@@ -21,7 +19,7 @@ def modi_conf(modi_filename,source,dest):
         run_cmd(cmd_sed)
     return True
 
-def struc_modi(filename,buildHomePath):
+def struc_modi(filename):
     #init_log("modify.log")
     cf=ConfigParser.SafeConfigParser()
     cf.read(filename)
@@ -33,7 +31,7 @@ def struc_modi(filename,buildHomePath):
         returnData=get_conf(filename,section_one)
         source=returnData.keys()
         dest=returnData.values()
-        change_file=buildHomePath+"/"+section_one
+        change_file=section_one
         modi_conf(change_file,source,dest)
     return True
 
