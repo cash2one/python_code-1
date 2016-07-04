@@ -74,7 +74,7 @@ def check_docker(docker_list):
         docker_run_list.append(docker_info["Names"][0].encode("utf-8").strip("/").lower())
     for docker_ in docker_list.split(","):
         if docker_ not in docker_run_list:
-            start_docer(docker_info[docker_])
+            start_docer(docker_)
     return True
 
 
