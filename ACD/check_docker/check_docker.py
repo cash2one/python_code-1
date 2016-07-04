@@ -81,6 +81,8 @@ def check_docker(docker_list):
 def start_docer(name):
     cli = docker.Client(base_url='unix://var/run/docker.sock')
     cli.start(container=name)
+    msg="Docker named %s start"%name
+    logMsg("start",msg,2)
     return True
 
 def main():
