@@ -68,17 +68,13 @@ def get_host():
 def check_docker(docker_list):
     cli = docker.Client(base_url='unix://var/run/docker.sock')
     docker_infos=cli.containers()
+    docker_run_list=[]
+    for docker_info in docker_infos:
+        docker_info["State"] == u'running'
+        docker_run_list.append(docker_info["Names"][0].encode("utf-8").strip("/").lower())
     for docker_ in docker_list.split(","):
-        for docker_info in docker_infos:
-            is_check=False
-            if docker_info["Names"].lower()==docker_.lower():
-                is_check=True
-                if docker_info["State"] != u'running':
-                    start_docer(docker_info["Names"])
-            if is_check==False:
-                msg="Docker %s not found"%docker_info["Names"]
-                logMsg("check",msg,2)
-                return False
+        if docker_ not in docker_run_list:
+            start_docer(docker_info[docker_])
     return True
 
 
