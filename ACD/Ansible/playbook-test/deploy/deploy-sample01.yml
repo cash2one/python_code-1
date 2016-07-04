@@ -29,3 +29,5 @@
     - name: restart service
       shell: echo service restart
 
+    - name: get file from git
+      git: repo=https://github.com/milespeng/python_code dest=/data/script update=no
