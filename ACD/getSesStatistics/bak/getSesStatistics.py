@@ -7,8 +7,8 @@ import sys
 today = datetime.datetime.now().strftime('%Y-%m-%d')
 conn = boto.ses.connect_to_region(
     'us-east-1',
-    aws_access_key_id='AKIAIXNXIMKN7UGIJ7EA',
-    aws_secret_access_key='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',
+    aws_access_key_id='aws_access_key_id',
+    aws_secret_access_key='aws_secret_access_key',
 )
 
 jsonOutput = conn.get_send_statistics()
