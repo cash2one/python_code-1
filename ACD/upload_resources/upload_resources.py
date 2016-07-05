@@ -22,49 +22,35 @@ def upload_s3(source_path,target_path_prefix,profile):
     cmd="aws s3 sync {source_path} {target_path}  --acl public-read --cache-control='no-cache' " \
         "--profile {profile}".format(source_path=source_path,target_path=target_path_prefix,profile=profile)
     if _run(cmd):
-        msg="upload {project} success!".format(project=project_name)
-        logMsg("upload_s3",msg,1)
+        msg="upload {source_path} success!".format(source_path=source_path)
+        logMsg("S3",msg,1)
+        print msg
     return True
-
-# def upload_qiniu(qiniu_dict,version):
-#     #mv source to tmp/version
-#     source=qiniu_dict.get("src")
-#     pdb.set_trace()
-#  #   cmd="mkdir -p /tmp/qiniu/&&rm -r /tmp/qiniu/{version} && cp -r {source} /tmp/qiniu/{version}".format(version=version,source=source)
-#     cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
-#     if _run(cmd):
-#         qiniu_dict["src"]="/tmp/qiniu/{version}".format(version=version)
-#         data=json.dumps(qiniu_dict)
-#         with open("/tmp/qiniu.json","w") as f:
-#             f.write(data)
-#             f.close()
-#     cmd_sync="/home/qa/miles/qiniu/qrsync/qrsync /tmp/qiniu.json"
-#     if _run(cmd_sync):
-#         msg="Sync to qiniu success "
-#         logMsg("upload_qiniu",msg,1)
-#         return True
-#     return False
 
 def upload_qiniu_qshell(qiniu_dict,version):
      source=qiniu_dict.get("src_dir",None)
      cmd="sh /home/qa/miles/scripts/ACD/upload_resources/remove_tmp.sh {source} {version}".format(source=source,version=version)
+     upload_path='/tmp/qiniu/'
      if _run(cmd):
-         json_template="""{
-         "src_dir"   :  {src_dir},
-         "access_key":   {access_key},
-         "secret_key":   {secret_key},
-         "bucket"    :   {bucket},
-         "up_host"   :   "http://upload.qiniu.com",
-         "ignore_dir":   false,
-         "key_prefix":   {key_prefix},
-         "overwrite" :   false,
-         "check_exists" :    false
-         }""".format(src_dir=source,access_key=qiniu_dict["qiniu_access_key"],secret_key=qiniu_dict["qiniu_secret_key"],buffer=qiniu_dict["bucket_name"],key_prefix=qiniu_dict.get("key_prefix",""))
+         json_template={
+             "src_dir"   : upload_path,
+                 "access_key":   qiniu_dict["qiniu_access_key"],
+                "secret_key":   qiniu_dict["qiniu_secret_key"],
+                "bucket"    :   qiniu_dict["bucket_name"],
+                "up_host"   :   "http://upload.qiniu.com",
+                "ignore_dir":   False,
+                "rescan_local": True,
+                "key_prefix":  qiniu_dict.get("key_prefix",""),
+                "overwrite" :   False,
+                "check_exists" : False
+         }
          with open("/tmp/qiniu.conf",'w') as f:
-             f.write(json_template)
+             f.write(json.dumps(json_template,indent=4))
 
-         sync_cmd="/home/qa/miles/qiniu/qshell qupload /tmp/qiniu.conf"
+         sync_cmd="/home/qa/miles/qiniu/qshell qupload 10 /tmp/qiniu.conf"
          if _run(sync_cmd):
+             msg="Sync {source} to {dest} success".format(source=upload_path,dest=qiniu_dict["bucket_name"])
+             logMsg("Qiniu",msg,1)
              print "Sync complete"
 
 
@@ -93,10 +79,11 @@ def _run(cmd):
     output,error_info = cmdref.communicate()
     if error_info:
         msg= "RUN %s ERROR,error info: %s "%(cmd,error_info)
+        print msg
         logMsg("cmd",msg,2)
         return False
     else:
-        print "Run Success!!"
+        print "Run %s Success!! \n %s"%(cmd,output)
         return True
 
 

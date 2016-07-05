@@ -1,7 +1,17 @@
-#!/usr/bin/python
-# _*_ encoding:utf-8_*_
-__author__ = "Miles.Peng"
 from flask import Flask
-app=Flask(__name__)
+from flask.ext.sqlalchemy import SQLAlchemy
+import os
+from flask.ext.login import LoginManager
+from flask.ext.openid import OpenID
+from config import basedir
+
+lm=LoginManager()
+lm.init_app(app)
+oid=OpenID(app,os.path.join(basedir,'tmp'))
+
+app = Flask(__name__)
 app.config.from_object('config')
-from app import views
+db = SQLAlchemy(app)
+
+from app import views, models
+

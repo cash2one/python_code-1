@@ -1,0 +1,33 @@
+---
+- name: Test deploy packages in tomcat
+  hosts: docker
+  tasks:
+    - name: create bak &build directory
+      file: path={{ item.dir }} state=directory
+      with_items:
+        - {dir: '/root/build'}
+        - {dir: '/root/bak'}
+
+    - name: cp source package to remote
+      copy: src=/tmp/{{ item.src }} dest={{ item.dest }}
+      with_items:
+        - { src: 'temp.tar.gz', dest: '/root/build/temp.tar.gz' }
+        - { src: 'qiniu.conf', dest: '/data/qiniu.conf' }
+
+    - name: back old package
+      script: /home/qa/miles/ansible/playbook/script/backold.sh
+
+    - name: tar zxvf file
+      shell: cd /root/build && tar zxvf temp.tar.gz
+
+    - name: service stop
+      shell: echo service stop
+
+    - name: cp new package to deploy dir
+      shell: cd /data && rm -r temp && cp -r /root/build/temp .
+
+    - name: restart service
+      shell: echo service restart
+
+    - name: get file from git
+      git: repo=https://github.com/milespeng/python_code dest=/data/script update=no
