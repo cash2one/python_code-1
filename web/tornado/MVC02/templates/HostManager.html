@@ -1,0 +1,52 @@
+<html>
+<head>
+    <!--这里的{{title}}表示title这个变量的内容由服务器端产生并填写到该位置-->
+    <title>{{title}}</title>
+<body>
+<center><h1>Welcome to ServerManager</h1></center>
+<hr/>
+<center>
+    <!--表单以POST方式提交到AddUser-->
+    <form name = 'new_host' action = 'AddHost' method = 'post'>
+            Host:<input type = 'text' name = 'host_name' />
+            PRI_IP:<input type = 'text' name = 'private_ip' />
+            Pub_IP:<input type = 'text' name = 'public_ip' />
+            OS:<input type = 'text' name = 'os' />
+            MEM:<input type = 'text' name = 'mem' />
+            <input type = 'submit' value = 'Submit' />
+            <input type = 'reset' value = 'Reset' />
+    </form>
+<hr/>
+<table border = 1>
+        <tr style = 'font-weight:bold' align = 'center'>
+                <td width = '200' >Host</td>
+                <td width = '100' >PRI_IP</td>
+                <td width = '100' >Pub_IP</td>
+                <td width = '100' >OS</td>
+                <td width = '200' >MEM</td>
+                <td width = '100' ></td>
+                <td width = '100' ></td>
+                <td width = '100' ></td>
+
+        </tr>
+        <!--users是一个由服务器端通过查询数据库而产生的列表，这里用for语句可以把用户信息全部输出-->
+        {% for host in hosts %}
+        <tr align = 'center'>
+                <!--host.host_name即是用户名。下同-->
+                <td>{{ host.host_name }}</td>
+                <td>{{ host.private_ip }}</td>
+                <td>{{ host.public_ip }}</td>
+                <td>{{ host.os }}</td>
+                <td>{{ host.mem }}</td>
+                <!--编辑链接，可以编辑指定用户名的信息-->
+                <td><a href = 'EditHost?host_name={{host.host_name}}' >Edit</a></td>
+                <!--删除链接，可以删除指定用户名的信息-->
+                <td><a href = 'DeleteHost?host_name={{host.host_name}}' >Delete</a></td>
+                <td><a href = 'GetDataHost?host_name={{host.host_name}}' >GetData</a></td>
+        </tr>
+        <!--for循环结束-->
+        {% end %}
+</table>
+</center>
+</body>
+</html>

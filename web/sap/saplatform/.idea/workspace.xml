@@ -1,0 +1,1360 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b6c20136-df49-499b-888c-30e6cae6b06c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/saplatform/scripts/SchemaTool.php" afterPath="$PROJECT_DIR$/saplatform/scripts/SchemaTool.php" />
+    </list>
+    <ignored path="saplatform.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="saplatform" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="app_func.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/saplatform/api/app_func.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.34615386">
+              <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+              <folding>
+                <element signature="e#24#38#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perm.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/saplatform/api/perm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <push-targets>
+      <push-target-info repo="$PROJECT_DIR$" source="master" target-remote="origin" target-branch="master" />
+    </push-targets>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/templates/paginator.html" />
+        <option value="$PROJECT_DIR$/templates/database/sql_result.html" />
+        <option value="$PROJECT_DIR$/saplatform/settings/cons.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/product.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/sys_constant.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/app_constant.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/test.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/base.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/__init__.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/templates/database/sqls.html" />
+        <option value="$PROJECT_DIR$/database/tasks.py" />
+        <option value="$PROJECT_DIR$/saplatform/api.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/app_settings.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/other_fun.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/req.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/__init__.py" />
+        <option value="$PROJECT_DIR$/users/models.py" />
+        <option value="$PROJECT_DIR$/database/urls.py" />
+        <option value="$PROJECT_DIR$/templates/head_css.html" />
+        <option value="$PROJECT_DIR$/templates/foot_js.html" />
+        <option value="$PROJECT_DIR$/templates/database/sql_input.html" />
+        <option value="$PROJECT_DIR$/database/views.py" />
+        <option value="$PROJECT_DIR$/templates/release/project.html" />
+        <option value="$PROJECT_DIR$/templates/release/add_project.html" />
+        <option value="$PROJECT_DIR$/templates/release/edit_project.html" />
+        <option value="$PROJECT_DIR$/release/forms.py" />
+        <option value="$PROJECT_DIR$/templates/release/test_release.html" />
+        <option value="$PROJECT_DIR$/templates/release/test.html" />
+        <option value="$PROJECT_DIR$/saplatform/api/tool_api.py" />
+        <option value="$PROJECT_DIR$/saplatform/tasks_urls.py" />
+        <option value="$PROJECT_DIR$/saplatform/settings/dev.py" />
+        <option value="$PROJECT_DIR$/saplatform/tasks.py" />
+        <option value="$PROJECT_DIR$/saplatform/celery.py" />
+        <option value="$PROJECT_DIR$/saplatform/urls.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/app_func.py" />
+        <option value="$PROJECT_DIR$/users/views.py" />
+        <option value="$PROJECT_DIR$/release/tasks.py" />
+        <option value="$PROJECT_DIR$/templates/error.html" />
+        <option value="$PROJECT_DIR$/templates/release/edit_test.html" />
+        <option value="$PROJECT_DIR$/templates/release/add_test.html" />
+        <option value="$PROJECT_DIR$/templates/release/roll_back.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/saplatform/api/sys_func.py" />
+        <option value="$PROJECT_DIR$/release/models.py" />
+        <option value="$PROJECT_DIR$/templates/release/rollback.html" />
+        <option value="$PROJECT_DIR$/release/urls.py" />
+        <option value="$PROJECT_DIR$/templates/release/release_list.html" />
+        <option value="$PROJECT_DIR$/templates/release/pre_record.html" />
+        <option value="$PROJECT_DIR$/release/views.py" />
+        <option value="$PROJECT_DIR$/saplatform/api/perm.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="27" />
+    <option name="y" value="23" />
+    <option name="width" value="1235" />
+    <option name="height" value="770" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="saplatform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="release" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="migrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../test" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates/release" />
+      <recent name="$PROJECT_DIR$/templates/database" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Django server.saplatform">
+    <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="TARGET" value="" />
+      <option name="SETTINGS_FILE" value="" />
+      <option name="CUSTOM_SETTINGS" value="false" />
+      <option name="USE_OPTIONS" value="false" />
+      <option name="OPTIONS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PyBehaveRunConfigurationType" factoryName="Behave">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PyLettuceRunConfigurationType" factoryName="Lettuce">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="ADDITIONAL_ARGS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Attests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Nosetests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Unittests">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="py.test">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="testToRun" value="" />
+      <option name="keywords" value="" />
+      <option name="params" value="" />
+      <option name="USE_PARAM" value="false" />
+      <option name="USE_KEYWORD" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="saplatform" type="Python.DjangoServer" factoryName="Django server">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="saplatform.settings" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/local/Cellar/python/2.7.9/bin/python2.7" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="saplatform" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Django server.saplatform" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b6c20136-df49-499b-888c-30e6cae6b06c" name="Default" comment="" />
+      <created>1455769770808</created>
+      <option name="number" value="Default" />
+      <updated>1455769770808</updated>
+    </task>
+    <task id="LOCAL-00002" summary="1">
+      <created>1455774924711</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1455774924711</updated>
+    </task>
+    <task id="LOCAL-00003" summary="1">
+      <created>1455775133400</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1455775133400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="1">
+      <created>1455778596246</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1455778596246</updated>
+    </task>
+    <task id="LOCAL-00005" summary="read me">
+      <created>1455780356196</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1455780356196</updated>
+    </task>
+    <task id="LOCAL-00006" summary="read me">
+      <created>1455783618375</created>
+      <option name="number" value="00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1455783618375</updated>
+    </task>
+    <task id="LOCAL-00007" summary="read me">
+      <created>1455785531348</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1455785531348</updated>
+    </task>
+    <task id="LOCAL-00008" summary="read me">
+      <created>1455785642409</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1455785642409</updated>
+    </task>
+    <task id="LOCAL-00009" summary="read me">
+      <created>1455785732822</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1455785732822</updated>
+    </task>
+    <task id="LOCAL-00010" summary="sql">
+      <created>1455785774192</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1455785774192</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sql">
+      <created>1455785790929</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1455785790929</updated>
+    </task>
+    <task id="LOCAL-00012" summary="sql">
+      <created>1455786540712</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1455786540712</updated>
+    </task>
+    <task id="LOCAL-00013" summary="sql">
+      <created>1455849898668</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1455849898668</updated>
+    </task>
+    <task id="LOCAL-00014" summary="sql">
+      <created>1455850312336</created>
+      <option name="number" value="00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1455850312336</updated>
+    </task>
+    <task id="LOCAL-00015" summary="sql">
+      <created>1455851065222</created>
+      <option name="number" value="00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1455851065222</updated>
+    </task>
+    <task id="LOCAL-00016" summary="sql">
+      <created>1455851424599</created>
+      <option name="number" value="00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1455851424599</updated>
+    </task>
+    <task id="LOCAL-00017" summary="sql">
+      <created>1455853263249</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1455853263249</updated>
+    </task>
+    <task id="LOCAL-00018" summary="sql">
+      <created>1455862770287</created>
+      <option name="number" value="00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1455862770287</updated>
+    </task>
+    <task id="LOCAL-00019" summary="perms">
+      <created>1455865738985</created>
+      <option name="number" value="00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1455865738985</updated>
+    </task>
+    <task id="LOCAL-00020" summary="perms">
+      <created>1455873045829</created>
+      <option name="number" value="00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1455873045829</updated>
+    </task>
+    <task id="LOCAL-00021" summary="import">
+      <created>1456062027358</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1456062027358</updated>
+    </task>
+    <task id="LOCAL-00022" summary="import">
+      <created>1456120363681</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1456120363681</updated>
+    </task>
+    <task id="LOCAL-00023" summary="import">
+      <created>1456120475592</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1456120475592</updated>
+    </task>
+    <task id="LOCAL-00024" summary="import">
+      <created>1456120859576</created>
+      <option name="number" value="00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1456120859576</updated>
+    </task>
+    <task id="LOCAL-00025" summary="import">
+      <created>1456121189219</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121189219</updated>
+    </task>
+    <task id="LOCAL-00026" summary="import">
+      <created>1456121220283</created>
+      <option name="number" value="00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121220283</updated>
+    </task>
+    <task id="LOCAL-00027" summary="import">
+      <created>1456121283893</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121283893</updated>
+    </task>
+    <task id="LOCAL-00028" summary="import">
+      <created>1456121346334</created>
+      <option name="number" value="00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121346334</updated>
+    </task>
+    <task id="LOCAL-00029" summary="import">
+      <created>1456121479192</created>
+      <option name="number" value="00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121479192</updated>
+    </task>
+    <task id="LOCAL-00030" summary="import">
+      <created>1456121780662</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1456121780662</updated>
+    </task>
+    <task id="LOCAL-00031" summary="import">
+      <created>1456122553837</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1456122553837</updated>
+    </task>
+    <task id="LOCAL-00032" summary="import">
+      <created>1456123017443</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1456123017443</updated>
+    </task>
+    <task id="LOCAL-00033" summary="import">
+      <created>1456123183531</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1456123183531</updated>
+    </task>
+    <task id="LOCAL-00034" summary="import">
+      <created>1456123900807</created>
+      <option name="number" value="00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1456123900808</updated>
+    </task>
+    <task id="LOCAL-00035" summary="import">
+      <created>1456124046755</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1456124046755</updated>
+    </task>
+    <task id="LOCAL-00036" summary="sql task">
+      <created>1456218494853</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1456218494853</updated>
+    </task>
+    <task id="LOCAL-00037" summary="api">
+      <created>1456282913755</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1456282913755</updated>
+    </task>
+    <task id="LOCAL-00038" summary="api">
+      <created>1456282957447</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1456282957447</updated>
+    </task>
+    <task id="LOCAL-00039" summary="php sql">
+      <created>1456283950634</created>
+      <option name="number" value="00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1456283950634</updated>
+    </task>
+    <task id="LOCAL-00040" summary="php sql">
+      <created>1456297772784</created>
+      <option name="number" value="00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1456297772784</updated>
+    </task>
+    <task id="LOCAL-00041" summary="release">
+      <created>1456402645124</created>
+      <option name="number" value="00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1456402645124</updated>
+    </task>
+    <task id="LOCAL-00042" summary="release">
+      <created>1456466185775</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1456466185775</updated>
+    </task>
+    <task id="LOCAL-00043" summary="release">
+      <created>1456476907484</created>
+      <option name="number" value="00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1456476907484</updated>
+    </task>
+    <task id="LOCAL-00044" summary="release">
+      <created>1456566570685</created>
+      <option name="number" value="00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1456566570685</updated>
+    </task>
+    <task id="LOCAL-00045" summary="release">
+      <created>1456569345006</created>
+      <option name="number" value="00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1456569345006</updated>
+    </task>
+    <task id="LOCAL-00046" summary="release">
+      <created>1456570532585</created>
+      <option name="number" value="00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1456570532585</updated>
+    </task>
+    <task id="LOCAL-00047" summary="release">
+      <created>1456570647116</created>
+      <option name="number" value="00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1456570647116</updated>
+    </task>
+    <task id="LOCAL-00048" summary="release">
+      <created>1456580402006</created>
+      <option name="number" value="00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1456580402006</updated>
+    </task>
+    <task id="LOCAL-00049" summary="release">
+      <created>1456715119350</created>
+      <option name="number" value="00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1456715119350</updated>
+    </task>
+    <task id="LOCAL-00050" summary="perm">
+      <created>1456716492339</created>
+      <option name="number" value="00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1456716492340</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="27" y="23" width="1235" height="770" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2665549" sideWeight="0.49140048" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2665549" sideWeight="0.5085995" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970502" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32890856" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25398156" sideWeight="0.49140048" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2665549" sideWeight="0.5085995" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39970502" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="1" />
+    <MESSAGE value="read me" />
+    <MESSAGE value="sql" />
+    <MESSAGE value="perms" />
+    <MESSAGE value="import" />
+    <MESSAGE value="sql task" />
+    <MESSAGE value="api" />
+    <MESSAGE value="php sql" />
+    <MESSAGE value="release" />
+    <MESSAGE value="perm" />
+    <option name="LAST_COMMIT_MESSAGE" value="perm" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6923077">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35128805">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/scripts/SchemaTool.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40983605">
+          <caret line="350" column="48" selection-start-line="350" selection-start-column="48" selection-end-line="350" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/other_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.046153847">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/head_css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6277916">
+          <caret line="22" column="27" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/foot_js.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36724564">
+          <caret line="15" column="65" selection-start-line="15" selection-start-column="65" selection-end-line="15" selection-end-column="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52506596">
+          <caret line="123" column="42" selection-start-line="123" selection-start-column="42" selection-end-line="123" selection-end-column="42" />
+          <folding>
+            <element signature="e#24#33#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43007916">
+          <caret line="27" column="12" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/database/sql_input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7971831">
+          <caret line="41" column="17" selection-start-line="41" selection-start-column="17" selection-end-line="41" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/database/sqls.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8450704">
+          <caret line="66" column="51" selection-start-line="66" selection-start-column="51" selection-end-line="66" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6332454">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41538462">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/edit_project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.52605456">
+          <caret line="51" column="49" selection-start-line="51" selection-start-column="49" selection-end-line="51" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/add_project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037220843">
+          <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/release_result.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36724564">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.42154565">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/project.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7444169">
+          <caret line="55" column="21" selection-start-line="55" selection-start-column="21" selection-end-line="55" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21077283">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/tool_api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.05386417">
+          <caret line="35" column="0" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/product.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52693206">
+          <caret line="15" column="23" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52693206">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.8618267">
+          <caret line="130" column="0" selection-start-line="130" selection-start-column="0" selection-end-line="130" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07025761">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#51#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.80796254">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.21077283">
+          <caret line="6" column="27" selection-start-line="6" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4566745">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/req.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.07025761">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32307693">
+          <caret line="14" column="47" selection-start-line="14" selection-start-column="47" selection-end-line="14" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06923077">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/app_constant.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.06923077">
+          <caret line="3" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/settings/dev.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6923077">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/error.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45527157">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/edit_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.4615386">
+          <caret line="93" column="32" selection-start-line="93" selection-start-column="32" selection-end-line="93" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/add_test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3300248">
+          <caret line="105" column="11" selection-start-line="105" selection-start-column="11" selection-end-line="105" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.833333">
+          <caret line="78" column="52" selection-start-line="78" selection-start-column="52" selection-end-line="78" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6004963">
+          <caret line="87" column="31" selection-start-line="87" selection-start-column="31" selection-end-line="87" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.77517563">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/rollback.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0477707">
+          <caret line="67" column="121" selection-start-line="67" selection-start-column="121" selection-end-line="67" selection-end-column="121" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/assets/add_auth.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.45700637">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/perm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="22" selection-start-line="22" selection-start-column="22" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26153848">
+          <caret line="30" column="59" selection-start-line="30" selection-start-column="59" selection-end-line="30" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/release_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5479233">
+          <caret line="58" column="41" selection-start-line="58" selection-start-column="41" selection-end-line="58" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/sys_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3323077">
+          <caret line="105" column="35" selection-start-line="105" selection-start-column="35" selection-end-line="105" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.1076924">
+          <caret line="12" column="36" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43846154">
+          <caret line="19" column="107" selection-start-line="19" selection-start-column="107" selection-end-line="19" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/release/pre_record.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57507986">
+          <caret line="106" column="17" selection-start-line="106" selection-start-column="17" selection-end-line="106" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/saplatform/api/app_func.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34615386">
+          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
+          <folding>
+            <element signature="e#24#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

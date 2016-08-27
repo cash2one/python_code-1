@@ -8,20 +8,8 @@ import pdb
 def check(url,values):
     headers = {'content-type': 'application/json'}
 
-    # headers={
-    #     "X-Requested-With": "XMLHttpRequest",
-    #     "Accept": "application/json, text/javascript, */*; q=0.01",
-    #     "Access-Control-Allow-Origin": "*",
-    #     "User-Agent": "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.97 Safari/537.36",
-    #     "Connection": "keep-alive",
-    #     "Accept-Encoding": "gzip, deflate",
-    #     "Content-Length": "65",
-    #     "Content-Type": "application/json;charset=utf-8"
-    # }
-    #pdb.set_trace()
     s = requests.Session()
     r=s.post(url,data = json.dumps(values),headers=headers)
-    #r=requests.post(url,data=json.dumps(values),headers=headers)
 
     the_page = r.content
     return the_page

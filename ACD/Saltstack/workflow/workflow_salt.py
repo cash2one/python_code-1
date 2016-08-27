@@ -4,8 +4,6 @@
 __author__ = 'miles.peng'
 import sys
 sys.path.append("..")
-from common.configparser import *
-from common.cmdrun import *
 from deploy_workflow import Root_dir
 
 '''工作流基本类型类，包含基于salt实现的服务的开启与关闭，文件分发，文件部署等'''

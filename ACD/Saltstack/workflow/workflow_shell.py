@@ -1,7 +1,8 @@
 #! /usr/bin/python
 # -*- coding: utf-8 -*-
 __author__ = 'miles.peng'
-from common.cmdrun import *
+
+
 class Workflow_shell():
 
 

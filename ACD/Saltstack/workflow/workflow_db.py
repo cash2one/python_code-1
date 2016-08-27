@@ -2,11 +2,8 @@
 # -*- coding: utf-8 -*-
 __author__ = 'miles.peng'
 '''数据库工作流方法'''
-import  os
 import  sys
 sys.path.append("..")
-from common.manageDB import *
-from common.configparser import *
 from deploy_workflow import Root_dir
 
 

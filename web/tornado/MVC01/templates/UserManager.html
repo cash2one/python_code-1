@@ -1,0 +1,49 @@
+<html>
+<head>
+    <!--这里的{{title}}表示title这个变量的内容由服务器端产生并填写到该位置-->
+    <title>{{title}}</title>
+<body>
+<center><h1>Welcome to UserManager</h1></center>
+<hr/>
+<center>
+    <!--表单以POST方式提交到AddUser-->
+    <form name = 'new_user' action = 'AddUser' method = 'post'>
+            Name:<input type = 'text' name = 'user_name' />
+            Age:<input type = 'text' name = 'user_age' />
+            Sex:<input type = 'text' name = 'user_sex' />
+            Score:<input type = 'text' name = 'user_score' />
+            Subject:<input type = 'text' name = 'user_subject' />
+            <input type = 'submit' value = 'Submit' />
+            <input type = 'reset' value = 'Reset' />
+    </form>
+<hr/>
+<table border = 1>
+        <tr style = 'font-weight:bold' align = 'center'>
+                <td width = '200' >Name</td>
+                <td width = '100' >Age</td>
+                <td width = '100' >Sex</td>
+                <td width = '100' >Score</td>
+                <td width = '200' >Subject</td>
+                <td width = '100' ></td>
+                <td width = '100' ></td>
+        </tr>
+        <!--users是一个由服务器端通过查询数据库而产生的列表，这里用for语句可以把用户信息全部输出-->
+        {% for user in users %}
+        <tr align = 'center'>
+                <!--user.user_name即是用户名。下同-->
+                <td>{{ user.user_name }}</td>
+                <td>{{ user.user_age }}</td>
+                <td>{{ user.user_sex }}</td>
+                <td>{{ user.user_score }}</td>
+                <td>{{ user.user_subject }}</td>
+                <!--编辑链接，可以编辑指定用户名的信息-->
+                <td><a href = 'EditUser?user_name={{user.user_name}}' >Edit</a></td>
+                <!--删除链接，可以删除指定用户名的信息-->
+                <td><a href = 'DeleteUser?user_name={{user.user_name}}' >Delete</a></td>
+        </tr>
+        <!--for循环结束-->
+        {% end %}
+</table>
+</center>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+    <!--user_info是一个对象，user_name则是该对象的一个属性-->
+    <title>Edit Info for Host: {{host_info.host_name}}</title>
+</head>
+<body>
+<h1>Edit Host Info</h1>
+<hr/>
+<center>
+    <!--以POST方式将修改后的信息提交到UpdateUserInfo-->
+    <form name = 'edit_host_info' action = 'UpdateHostInfo' method = 'post' >
+            Host: <input type = 'text' name = 'host_name' value = {{host_info.host_name }} readonly/>
+            PRV_IP: <input type = 'text' name = 'private_ip' value = {{host_info.private_ip }} />
+            PUB_IP: <input type = 'text' name = 'public_ip' value = {{host_info.public_ip }} />
+            OS: <input type = 'text' name = 'os' value = {{host_info.os }} />
+            MEM: <input type = 'text' name = 'mem' value = {{host_info.mem }} />
+            <input type = 'submit' value = 'Submit' />
+            <input type = 'Reset' value = 'Reset' />
+    </form>
+</center>
+<hr/>
+</body>
+</html>

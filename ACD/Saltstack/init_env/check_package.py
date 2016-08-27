@@ -4,14 +4,15 @@ Root_dir="/srv/salt/deploy_workflow"
 import sys
 sys.path.append(Root_dir)
 import sys
-import common.configparser
+from ACD.tools.deploy_code.make_pkg import common
+
+
 #from deploy_workflow import Root_dir
-import  common.cmdrun
 
 
 def check_package(check_host,get_version_cmd,package_version):
     cmd='salt "%s" cmd.run "%s"'%(check_host,get_version_cmd)
-    _cmdrun=common.cmdrun.CmdRun()
+    _cmdrun= common.cmdrun.CmdRun()
     out=_cmdrun.run_salt_package_check(cmd)
     check_out=out.splitlines()[-1].strip()
     #print "Check host=%s cmd=%s output is %s,input version is %s"%(check_host,get_version_cmd,check_out,package_version)
@@ -26,7 +27,7 @@ def check_package(check_host,get_version_cmd,package_version):
 def install_package(check_host,install_sls,package_filename,package_dir,user):
     cmd="sudo salt '%s' state.sls sls.%s pillar='{package_dir: '%s', package_filename: '%s',user: '%s'}'"%(check_host,install_sls,package_dir,package_filename,user)
     salt_mode = "state"
-    _cmdrun=common.cmdrun.CmdRun()
+    _cmdrun= common.cmdrun.CmdRun()
     if _cmdrun.run_salt(cmd,salt_mode):
         return  True
     else:
@@ -35,7 +36,7 @@ def install_package(check_host,install_sls,package_filename,package_dir,user):
 def install_pkg(check_host,install_sls,pkg_name):
     cmd="sudo salt '%s' state.sls sls.%s pillar='{pkg_name: '%s'}'"%(check_host,install_sls,pkg_name)
     salt_mode = "state"
-    _cmdrun=common.cmdrun.CmdRun()
+    _cmdrun= common.cmdrun.CmdRun()
     if _cmdrun.run_salt(cmd,salt_mode):
         return  True
     else:
@@ -45,7 +46,7 @@ def install_pkg(check_host,install_sls,pkg_name):
 
 def check_service(check_host,check_service_cmd):
     cmd='salt "%s" cmd.run "%s"'%(check_host,check_service_cmd)
-    _cmdrun=common.cmdrun.CmdRun()
+    _cmdrun= common.cmdrun.CmdRun()
     out=_cmdrun.run_salt_package_check(cmd)
     if not out:
         return True
@@ -59,7 +60,7 @@ def check_workflow(projectName,SectionName,check_host_list):
     check_section_filename=Root_dir+"/init_env/section_package.ini"
     check_package_filename=Root_dir+"/init_env/packages.ini"
     section="%s-%s"%(projectName,SectionName)
-    _config=common.configparser.Getconfig()
+    _config= common.configparser.Getconfig()
     _packages=_config.getconfig(section,check_section_filename)["packages"]
     packages=_packages.split(",")
 #    check_host_list=[]
@@ -115,7 +116,7 @@ def init_user_dir(check_host_list):
     for host in check_host_list:
         cmd='salt "%s" state.sls sls.deploy_init'%host
         salt_mode = "state"
-        _runcmd=common.cmdrun.CmdRun()
+        _runcmd= common.cmdrun.CmdRun()
         if _runcmd.run_salt(cmd,salt_mode):
             print "Initialization user dir etc success \n"
             return  True
@@ -125,7 +126,7 @@ def init_user_dir(check_host_list):
 
 
 def get_hostname(projectName,SectionName,hostName):
-    _config=common.configparser.Getconfig()
+    _config= common.configparser.Getconfig()
     check_host_list=[]
     if not hostName:
         workflow_ini=Root_dir+"/ini/"+projectName+"_workflow.ini"

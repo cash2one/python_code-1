@@ -1,0 +1,1 @@
+select count(1) as 'num' from autoops.auth_permissi;
